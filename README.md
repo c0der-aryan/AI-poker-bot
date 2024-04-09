@@ -2,11 +2,11 @@
 
 ![Silicon Chip Smackdown Logo](logo.png)
 
-Project Name: AI Poker Bot
+## Project Name: AI Poker Bot
 
-Event: APOGEE, Tech Fest at BITS Pilani
+### Event: APOGEE, Tech Fest at BITS Pilani
 
-Description:
+#### Description:
 
 🤖 The AI Poker Bot is a cutting-edge project showcasing the power of artificial intelligence in poker. Developed for APOGEE at BITS Pilani, it revolutionizes poker playing with advanced machine learning and real-time analysis.
 
