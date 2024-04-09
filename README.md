@@ -16,7 +16,7 @@
 
 🚀 The project demonstrates technical prowess and opens new AI applications in gaming and decision-making.
 
-Team Members: User, Mouleek, Ashish, Sarthak
+Team Members: Mouleek, Aryan, Ashish, Sarthak
 
 Achievement: Secured the second position in the AI Poker Bot competition.
 
