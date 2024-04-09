@@ -2,27 +2,25 @@
 
 ![Silicon Chip Smackdown Logo](logo.png)
 
-This competition involves submitting a machine learning algorithm that can play a game of Texas hold'em poker against other agents. The performance of the models will also be tested against various given and hidden baseline models. The various conditions of the game will be provided to the participants.
+Project Name: AI Poker Bot
 
-## Submission Format
+Event: APOGEE, Tech Fest at BITS Pilani
 
-The first round of the event will be held **online**, and the code for your models have to submitted online. Your agent will have to extend a base agent class (BasePokerPlayer) and implement the methods of that class. The code for the base class is given below. For the specific details about the structure of the state and what return type is expected look at the section in the bottom of the document.
+Description:
 
-```python
-#Look below for the strcuture of the various variables passed
+🤖 The AI Poker Bot is a cutting-edge project showcasing the power of artificial intelligence in poker. Developed for APOGEE at BITS Pilani, it revolutionizes poker playing with advanced machine learning and real-time analysis.
 
-class BasePokerPlayer:
+🃏 Capable of analyzing game states, assessing hand strengths, predicting opponent moves, and making strategic decisions, it mimics human-like intelligence.
 
-    def declare_action(self, valid_actions, hole_card, round_state):
-        call_action_info = valid_actions[1]
-        action, amount = call_action_info["action"], call_action_info["amount"]
-        return action, amount
+🤯 Its algorithm integrates game theory, probability, and psychology for bluffing, calling, raising, or folding. The bot learns and adapts strategies, making it a formidable poker player.
 
-    def receive_game_start_message(self, game_info):
-        pass
+🚀 The project demonstrates technical prowess and opens new AI applications in gaming and decision-making.
 
-    def receive_round_start_message(self, round_count, hole_card, seats):
-        pass
+Team Members: User, Mouleek, Ashish, Sarthak
+
+Achievement: Secured the second position in the AI Poker Bot competition.
+
+This competition involved submitting a machine learning algorithm that can play a game of Texas hold'em poker against other agents. The performance of the models were tested against various given and hidden baseline models. The various conditions of the game were provided to the participants.
 
     def receive_street_start_message(self, street, round_state):
         pass
@@ -32,40 +30,6 @@ class BasePokerPlayer:
         
     def receive_round_result_message(self, winners, hand_info, round_state):
         pass
-```
-
-## Setup
-
-First, clone this repository and cd into it, then install the required packages in a new virtual environment by running the following lines -
-
-```bash
-# For UNIX based systems (It may be python3 instead of python)
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-# For Windows systems
-python -m venv venv
-.\venv\Scripts\activate.bat
-pip install -r requirements.txt
-```
-
-Make sure you are using **Python 3.12**.
-
-## Configuration & Usage
-
-- Max Rounds, Initial Stack Size and Small Blind Amount can be configured in the [game.py](game.py) file.
-- Run the [game.py](game.py) file in the terminal using ```bash python game.py```
-
-## Submission Conditions
-
-**Submit a single python file** containing your model as a class called **CustomPokerPlayer** extending BasePokerPlayer. It must implement all the methods defined in BasePokerPlayer. If your model requires weights, they must be attached in a separate file and loaded into the model as part of receive_game_start_message.
-
-- The models must be written in pytorch
-- The models have to perform without being given user input
-- The models will not have internet access
-- Do not include any training or debug code, only the class definition as shown in the examples
-- Your model must not have any dependencies outside of those specified in the requirements.txt file. If you wish to get a package added, please contact the organisers.
 
 ## Samples of callback arguments
 
@@ -577,3 +541,4 @@ Make sure you are using **Python 3.12**.
 }
 
 ```
+
